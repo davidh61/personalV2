@@ -6,7 +6,7 @@ body {
 
 .slewedBox {
   background: #c91ab2;
-  padding-top: 10%;
+  padding-top: 20%;
   transform: skew(0deg, -10deg) translateY(-190px); }
 
 .container {
