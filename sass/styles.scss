@@ -1,0 +1,53 @@
+$blue: #b2c7ea;
+$pink: #c91ab2;
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #262626;
+}
+.slewedBox {
+	background: $pink;
+	padding-top: 10%;
+	transform: skew(0deg, -10deg) translateY(-190px);
+}
+.container {
+	padding: 100px 100px 0 100px;
+	transform: skew(0deg, 10deg);
+}
+.container h1 {
+    font-family: 'Courgette', cursive;
+    color: white;
+	margin: 0;
+	padding: 20px 0;
+	font-size: 3em;
+}
+.container p {
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+	width: 80%;
+}
+
+.sec2 {
+	padding: 0 200px 150px;
+	color: #fff;
+	font-family: arial;
+	text-align: right;
+}
+.sec2 h1 {
+	margin: 0;
+	padding: 20px 0;
+	font-size: 3em;
+}
+.sec2 p {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+	width: 100%;
+}
