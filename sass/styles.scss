@@ -1,53 +1,29 @@
 $blue: #b2c7ea;
 $pink: #c91ab2;
+$font: 'Work Sans', sans-serif;
 
-@import url('https://fonts.googleapis.com/css?family=Courgette');
 
-body {
-	margin: 0;
-	padding: 0;
-	background: #262626;
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+html { 
+    background: url(../img/bg.PNG) repeat; 
+    -webkit-background-size: 200px;
+    -moz-background-size: 200px;
+    -o-background-size: 200px;      
+    background-size: 200px;
 }
-.slewedBox {
-	background: $pink;
-	padding-top: 20%;
-	transform: skew(0deg, -10deg) translateY(-190px);
-}
+
 .container {
-	padding: 100px 100px 0 100px;
-	transform: skew(0deg, 10deg);
-}
-.container h1 {
-    font-family: 'Courgette', cursive;
-    color: white;
-	margin: 0;
-	padding: 20px 0;
-	font-size: 3em;
-}
-.container p {
-	font-family: arial;
-	margin: 0;
-	padding: 0;
-	font-size: 1em;
-	line-height: 1.5em;
-	width: 80%;
+    padding: 20px;
 }
 
-.sec2 {
-	padding: 0 200px 150px;
-	color: #fff;
-	font-family: arial;
-	text-align: right;
+h1 {
+    font-family: $font;
+    text-align: center;
 }
-.sec2 h1 {
-	margin: 0;
-	padding: 20px 0;
-	font-size: 3em;
-}
-.sec2 p {
-	margin: 0;
-	padding: 0;
-	font-size: 1em;
-	line-height: 1.5em;
-	width: 100%;
+
+h1 span {
+    border: 2px solid black;
+    padding: 5px;
+    background-color: white;
 }
