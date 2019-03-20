@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
+* {
+  font-family: "Work Sans", sans-serif; }
+
 html {
   background: url(../img/bg.png) repeat;
   -webkit-background-size: 200px;
@@ -8,12 +11,33 @@ html {
 
 .container {
   padding: 20px; }
-
-h1 {
-  font-family: "Work Sans", sans-serif;
-  text-align: center; }
-
-h1 span {
-  border: 2px solid black;
-  padding: 5px;
-  background-color: white; }
+  .container .main {
+    padding-left: 30%;
+    width: 40%; }
+    @media screen and (max-width: 400px) {
+      .container .main {
+        padding-left: 5%;
+        width: 90%; } }
+    @media screen and (max-width: 1024px) {
+      .container .main {
+        padding-left: 10%;
+        width: 80%; } }
+    .container .main h1 {
+      font-family: "Work Sans", sans-serif;
+      text-align: center; }
+    .container .main p {
+      padding: 5px;
+      font-family: "Work Sans", sans-serif;
+      text-align: center; }
+    .container .main a {
+      color: black; }
+    .container .main a:hover {
+      text-decoration: none; }
+    .container .main span {
+      border: 2px solid black;
+      padding: 5px;
+      background-color: white; }
+    .container .main .portfolio-text {
+      border: 2px solid black;
+      padding: 5px;
+      background-color: white; }
