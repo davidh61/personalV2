@@ -38,6 +38,7 @@ html {
     h1 {
       font-family: $font;
       text-align: center;
+      padding: 10px;
     }
 
     p {
@@ -53,16 +54,90 @@ html {
       text-decoration: none;
     }
 
-    span {
-      border: 2px solid black;
+    .border {
+      background-color: black;
+    }
+    
+    .border-top {
+      height: 2px;
+      animation: scaleOut 1s;
+    }
+
+    .bottom-border {
+      height: 2px;
+      animation-delay: 2s;
+      // animation: scaleIn 1s;
+      animation: scaleIn 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .border-left {
+      float: left;
+    }
+
+    .border-right {
+      float: right;
+    }
+
+    .border-side {
+      width: 2px;
+
+      animation-name: slideDown;
+      -webkit-animation-name: slideDown;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+      animation-delay: 1s;
+      -webkit-animation-delay: 1s;
+      display: inline-block;
+      animation-fill-mode: forwards;
+    }
+
+    .portfolio-header-wrapper {
+      display: inline-block;
+      // border: 2px solid black;
       padding: 5px;
       background-color: white;
+      transition: height 0.5s;
+    }
+
+    .portfolio-header {
+      text-align: center;
+      padding: 20px;
     }
 
     .portfolio-text {
       border: 2px solid black;
-      padding: 5px;
+      padding: 10px;
       background-color: white;
     }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 87px;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

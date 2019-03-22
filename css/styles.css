@@ -24,7 +24,8 @@ html {
         width: 80%; } }
     .container .main h1 {
       font-family: "Work Sans", sans-serif;
-      text-align: center; }
+      text-align: center;
+      padding: 10px; }
     .container .main p {
       padding: 5px;
       font-family: "Work Sans", sans-serif;
@@ -33,11 +34,59 @@ html {
       color: black; }
     .container .main a:hover {
       text-decoration: none; }
-    .container .main span {
-      border: 2px solid black;
+    .container .main .border {
+      background-color: black; }
+    .container .main .border-top {
+      height: 2px;
+      animation: scaleOut 1s; }
+    .container .main .bottom-border {
+      height: 2px;
+      animation-delay: 2s;
+      animation: scaleIn 1s;
+      animation-fill-mode: forwards; }
+    .container .main .border-left {
+      float: left; }
+    .container .main .border-right {
+      float: right; }
+    .container .main .border-side {
+      width: 2px;
+      animation-name: slideDown;
+      -webkit-animation-name: slideDown;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+      animation-delay: 1s;
+      -webkit-animation-delay: 1s;
+      display: inline-block;
+      animation-fill-mode: forwards; }
+    .container .main .portfolio-header-wrapper {
+      display: inline-block;
       padding: 5px;
-      background-color: white; }
+      background-color: white;
+      transition: height 0.5s; }
+    .container .main .portfolio-header {
+      text-align: center;
+      padding: 20px; }
     .container .main .portfolio-text {
       border: 2px solid black;
-      padding: 5px;
+      padding: 10px;
       background-color: white; }
+
+@keyframes slideDown {
+  from {
+    height: 0px; }
+  to {
+    height: 87px; } }
+
+@keyframes scaleIn {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0); } }
+
+@keyframes scaleOut {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
