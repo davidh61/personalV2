@@ -33,11 +33,18 @@ html {
       color: black; }
     .container .main a:hover {
       text-decoration: none; }
-    .container .main span {
+    .container .main .hello {
       border: 2px solid black;
       padding: 5px;
       background-color: white; }
     .container .main .portfolio-text {
+      padding: 10px;
       border: 2px solid black;
       padding: 5px;
       background-color: white; }
+    .container .main .links {
+      font-size: 30px;
+      text-align: center;
+      border: 2px solid black;
+      background-color: white;
+      margin: 20px; }
