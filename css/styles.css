@@ -41,8 +41,16 @@ html {
       animation: scaleOut 1s; }
     .container .main .bottom-border {
       height: 2px;
+      animation-delay: 2s; }
+    .container .main .bottom-left-border {
+      float: left;
+      animation: slideRight 1s;
       animation-delay: 2s;
-      animation: scaleIn 1s;
+      animation-fill-mode: forwards; }
+    .container .main .bottom-border-right {
+      float: right;
+      animation: slideLeft 1s;
+      animation-delay: 2s;
       animation-fill-mode: forwards; }
     .container .main .border-left {
       float: left; }
@@ -77,13 +85,19 @@ html {
   from {
     height: 0px; }
   to {
-    height: 87px; } }
+    height: 89px; } }
 
-@keyframes scaleIn {
+@keyframes slideRight {
   from {
-    transform: scale(1); }
+    width: 0px; }
   to {
-    transform: scale(0); } }
+    width: 92px; } }
+
+@keyframes slideLeft {
+  from {
+    width: 0px; }
+  to {
+    width: 92px; } }
 
 @keyframes scaleOut {
   from {
