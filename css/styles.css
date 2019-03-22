@@ -23,6 +23,7 @@ html {
         padding-left: 10%;
         width: 80%; } }
     .container .main h1 {
+      margin: 0;
       font-family: "Work Sans", sans-serif;
       text-align: center;
       padding: 10px; }
@@ -46,10 +47,12 @@ html {
       float: left;
       animation: slideRight 1s;
       animation-delay: 2s;
+      animation-timing-function: linear;
       animation-fill-mode: forwards; }
     .container .main .bottom-border-right {
       float: right;
       animation: slideLeft 1s;
+      animation-timing-function: linear;
       animation-delay: 2s;
       animation-fill-mode: forwards; }
     .container .main .border-left {
@@ -58,7 +61,6 @@ html {
       float: right; }
     .container .main .border-side {
       width: 2px;
-      animation-name: slideDown;
       -webkit-animation-name: slideDown;
       animation-duration: 1s;
       -webkit-animation-duration: 1s;
@@ -70,7 +72,6 @@ html {
       animation-fill-mode: forwards; }
     .container .main .portfolio-header-wrapper {
       display: inline-block;
-      padding: 5px;
       background-color: white;
       transition: height 0.5s; }
     .container .main .portfolio-header {
@@ -85,19 +86,19 @@ html {
   from {
     height: 0px; }
   to {
-    height: 89px; } }
+    height: 50px; } }
 
 @keyframes slideRight {
   from {
-    width: 0px; }
+    width: 0rem; }
   to {
-    width: 92px; } }
+    width: 5.5rem; } }
 
 @keyframes slideLeft {
   from {
-    width: 0px; }
+    width: 0rem; }
   to {
-    width: 92px; } }
+    width: 5.5rem; } }
 
 @keyframes scaleOut {
   from {

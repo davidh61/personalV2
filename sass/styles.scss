@@ -36,6 +36,7 @@ html {
     }
 
     h1 {
+      margin: 0;
       font-family: $font;
       text-align: center;
       padding: 10px;
@@ -72,12 +73,14 @@ html {
       float: left;
       animation: slideRight 1s;
       animation-delay: 2s;
+      animation-timing-function: linear;
       animation-fill-mode: forwards;
     }
 
     .bottom-border-right {
       float: right;
       animation: slideLeft 1s;
+      animation-timing-function: linear;
       animation-delay: 2s;
       animation-fill-mode: forwards;
     }
@@ -93,7 +96,6 @@ html {
     .border-side {
       width: 2px;
 
-      animation-name: slideDown;
       -webkit-animation-name: slideDown;
       animation-duration: 1s;
       -webkit-animation-duration: 1s;
@@ -107,8 +109,6 @@ html {
 
     .portfolio-header-wrapper {
       display: inline-block;
-      // border: 2px solid black;
-      padding: 5px;
       background-color: white;
       transition: height 0.5s;
     }
@@ -131,25 +131,25 @@ html {
     height: 0px;
   }
   to {
-    height: 89px;
+    height: 50px;
   }
 }
 
 @keyframes slideRight {
   from {
-    width: 0px;
+    width: 0rem;
   }
   to {
-    width: 92px;
+    width: 5.5rem;
   }
 }
 
 @keyframes slideLeft {
   from {
-    width: 0px;
+    width: 0rem;
   }
   to {
-    width: 92px;
+    width: 5.5rem;
   }
 }
 
@@ -160,4 +160,4 @@ html {
   to {
     transform: scale(1);
   }
-}
+}   
