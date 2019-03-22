@@ -31,9 +31,9 @@ html {
       padding: 5px;
       font-family: "Work Sans", sans-serif;
       text-align: center; }
-    .container .main a {
+    .container .main .text-link {
       color: black; }
-    .container .main a:hover {
+    .container .main .text-link:hover {
       text-decoration: none; }
     .container .main .border {
       background-color: black; }
@@ -60,7 +60,7 @@ html {
     .container .main .border-right {
       float: right; }
     .container .main .border-side {
-      width: 2px;  
+      width: 2px;
       -webkit-animation-name: slideDown;
       animation-duration: 1s;
       -webkit-animation-duration: 1s;
@@ -82,12 +82,17 @@ html {
       border: 2px solid black;
       padding: 10px;
       background-color: white; }
-    .container .main .links {
+    .container .main .connect {
       font-size: 30px;
       text-align: center;
       border: 2px solid black;
       background-color: white;
       margin: 20px; }
+    .container .main .connect > a {
+      color: black;
+      text-decoration: none; }
+    .container .main .connect > a:hover {
+      text-decoration: none; }
 
 @keyframes slideDown {
   from {
@@ -99,7 +104,7 @@ html {
   from {
     width: 0rem; }
   to {
-    width: 5.5rem; } }
+    width: 5.9rem; } }
 
 @keyframes slideLeft {
   from {
