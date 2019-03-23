@@ -27,6 +27,12 @@ html {
       font-family: "Work Sans", sans-serif;
       text-align: center;
       padding: 10px; }
+    .container .main .world {
+      color: black;
+      text-decoration: none; }
+    .container .main .world:hover {
+      color: #0077be;
+      animation: spin 2s linear infinite; }
     .container .main p {
       padding: 5px;
       font-family: "Work Sans", sans-serif;
@@ -96,11 +102,13 @@ html {
       color: black;
       text-decoration: none; }
     .container .main .connect > a:hover:first-child {
-      color: #0077B5; }
+      color: #0077b5; }
     .container .main .connect > a:hover:nth-child(2) {
       color: #333; }
     .container .main .connect > a:hover:nth-child(3) {
       color: #f48024; }
+    .container .main .connect > a:hover:nth-child(4) {
+      color: #0072c6; }
     .container .main .connect > a:hover {
       text-decoration: none; }
 
@@ -127,3 +135,8 @@ html {
     transform: scale(0); }
   to {
     transform: scale(1); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
