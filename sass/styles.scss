@@ -125,22 +125,40 @@ html {
       background-color: white;
     }
 
+    .footer {
+      text-align: center;
+    }
+
     .connect {
+      display: inline-block;
       font-size: 30px;
       text-align: center;
       border: 2px solid black;
       background-color: white;
       margin: 20px;
+      padding: 5px 10px 5px 10px;
     }
 
     .connect > a {
-        color: black;
+      color: black;
       text-decoration: none;
     }
 
+    .connect > a:hover:first-child {
+      color: #0077B5;
+    }
+
+    .connect > a:hover:nth-child(2) {
+        color: #333
+    }
+
+    .connect > a:hover:nth-child(3) {
+        color: #f48024;
+    }
+
     .connect > a:hover {
-        text-decoration: none;
-      }
+      text-decoration: none;
+    }
   }
 }
 
