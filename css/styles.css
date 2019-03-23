@@ -32,7 +32,9 @@ html {
       text-decoration: none; }
     .container .main .world:hover {
       color: #0077be;
-      animation: spin 2s linear infinite; }
+      animation: spin 2s linear infinite;
+      -webkit-animation: spin 2s linear infinite;
+      -moz-animation: spin 2s linear infinite; }
     .container .main p {
       padding: 5px;
       font-family: "Work Sans", sans-serif;
@@ -45,19 +47,25 @@ html {
       background-color: black; }
     .container .main .border-top {
       height: 2px;
-      animation: scaleOut 1s; }
+      animation: scaleOut 1s;
+      -webkit-animation: scaleOut 1s;
+      -moz-animation: scaleOut 1s; }
     .container .main .bottom-border {
       height: 2px;
       animation-delay: 2s; }
     .container .main .bottom-left-border {
       float: left;
       animation: slideRight 1s;
+      -webkit-animation: slideRight 1s;
+      -moz-animation: slideRight 1s;
       animation-delay: 2s;
       animation-timing-function: linear;
       animation-fill-mode: forwards; }
     .container .main .bottom-border-right {
       float: right;
       animation: slideLeft 1s;
+      -webkit-animation: slideLeft 1s;
+      -moz-animation: slideLeft 1s;
       animation-timing-function: linear;
       animation-delay: 2s;
       animation-fill-mode: forwards; }

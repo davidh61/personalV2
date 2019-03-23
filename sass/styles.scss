@@ -44,15 +44,15 @@ html {
 
     .world {
       color: black;
-      text-decoration: none;    
+      text-decoration: none;
     }
 
     .world:hover {
-        color: #0077be ;
-        animation:spin 2s linear infinite;
+      color: #0077be;
+      animation: spin 2s linear infinite;
+      -webkit-animation: spin 2s linear infinite;
+      -moz-animation: spin 2s linear infinite;
     }
-
-
 
     p {
       padding: 5px;
@@ -74,6 +74,8 @@ html {
     .border-top {
       height: 2px;
       animation: scaleOut 1s;
+      -webkit-animation: scaleOut 1s;
+      -moz-animation: scaleOut 1s;
     }
 
     .bottom-border {
@@ -84,6 +86,8 @@ html {
     .bottom-left-border {
       float: left;
       animation: slideRight 1s;
+      -webkit-animation: slideRight 1s;
+      -moz-animation: slideRight 1s;
       animation-delay: 2s;
       animation-timing-function: linear;
       animation-fill-mode: forwards;
@@ -92,6 +96,8 @@ html {
     .bottom-border-right {
       float: right;
       animation: slideLeft 1s;
+      -webkit-animation: slideLeft 1s;
+      -moz-animation: slideLeft 1s;
       animation-timing-function: linear;
       animation-delay: 2s;
       animation-fill-mode: forwards;
@@ -215,8 +221,8 @@ html {
 }
 
 @keyframes spin {
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
+}
