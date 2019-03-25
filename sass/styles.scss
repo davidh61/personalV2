@@ -162,19 +162,24 @@ html {
       text-decoration: none;
     }
 
+
     .connect > a:hover:first-child {
-      color: #0077b5;
+      color: #E1306C;
     }
 
     .connect > a:hover:nth-child(2) {
-      color: #333;
+      color: #0077b5;
     }
 
     .connect > a:hover:nth-child(3) {
-      color: #f48024;
+      color: #333;
     }
 
     .connect > a:hover:nth-child(4) {
+      color: #f48024;
+    }
+
+    .connect > a:hover:nth-child(5) {
       color: #0072c6;
     }
 
@@ -185,7 +190,7 @@ html {
 }
 
 @keyframes slideDown {
-  from {
+  from {  
     height: 0rem;
   }
   to {
