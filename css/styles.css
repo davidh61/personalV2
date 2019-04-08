@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+* {
+  font-family: "Work Sans", sans-serif; }
+
+html {
+  background: url(../img/bg.png) repeat;
+  -webkit-background-size: 200px;
+  -moz-background-size: 200px;
+  -o-background-size: 200px;
+  background-size: 200px; }
+
+.container {
+  padding: 20px; }
+  .container .main {
+    padding-left: 30%;
+    width: 40%; }
+    @media screen and (max-width: 400px) {
+      .container .main {
+        padding-left: 5%;
+        width: 90%; } }
+    @media screen and (max-width: 1024px) {
+      .container .main {
+        padding-left: 10%;
+        width: 80%; } }
+    .container .main h1 {
+      margin: 0;
+      font-family: "Work Sans", sans-serif;
+      text-align: center;
+      padding: 10px; }
+    .container .main .world {
+      color: black;
+      text-decoration: none; }
+    .container .main .world:hover {
+      color: #0077be;
+      animation: spin 2s linear infinite;
+      -webkit-animation: spin 2s linear infinite;
+      -moz-animation: spin 2s linear infinite; }
+    .container .main p {
+      padding: 5px;
+      font-family: "Work Sans", sans-serif;
+      text-align: center; }
+    .container .main .text-link {
+      color: black; }
+    .container .main .text-link:hover {
+      text-decoration: none; }
+    .container .main .border {
+      background-color: black; }
+    .container .main .border-top {
+      height: 2px;
+      animation: scaleOut 1s;
+      -webkit-animation: scaleOut 1s;
+      -moz-animation: scaleOut 1s; }
+    .container .main .bottom-border {
+      height: 2px;
+      animation-delay: 2s; }
+    .container .main .bottom-left-border {
+      float: left;
+      animation: slideRight 1s;
+      -webkit-animation: slideRight 1s;
+      -moz-animation: slideRight 1s;
+      animation-delay: 2s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards; }
+    .container .main .bottom-border-right {
+      float: right;
+      animation: slideLeft 1s;
+      -webkit-animation: slideLeft 1s;
+      -moz-animation: slideLeft 1s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-fill-mode: forwards; }
+    .container .main .border-left {
+      float: left; }
+    .container .main .border-right {
+      float: right; }
+    .container .main .border-side {
+      width: 2px;
+      -webkit-animation-name: slideDown;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+      animation-delay: 1s;
+      -webkit-animation-delay: 1s;
+      display: inline-block;
+      animation-fill-mode: forwards; }
+    .container .main .portfolio-header-wrapper {
+      display: inline-block;
+      background-color: white;
+      transition: height 0.5s; }
+    .container .main .portfolio-header {
+      text-align: center;
+      padding: 20px; }
+    .container .main .portfolio-text {
+      padding: 10px;
+      border: 2px solid black;
+      padding: 10px;
+      background-color: white; }
+    .container .main .footer {
+      text-align: center; }
+    .container .main .connect {
+      display: inline-block;
+      font-size: 30px;
+      text-align: center;
+      border: 2px solid black;
+      background-color: white;
+      margin: 20px;
+      padding: 5px 10px 5px 10px; }
+    .container .main .connect > a {
+      color: black;
+      text-decoration: none; }
+    .container .main .connect > a:hover:first-child {
+      color: #E1306C; }
+    .container .main .connect > a:hover:nth-child(2) {
+      color: #0077b5; }
+    .container .main .connect > a:hover:nth-child(3) {
+      color: #333; }
+    .container .main .connect > a:hover:nth-child(4) {
+      color: #f48024; }
+    .container .main .connect > a:hover:nth-child(5) {
+      color: #0072c6; }
+    .container .main .connect > a:hover {
+      text-decoration: none; }
+
+@keyframes slideDown {
+  from {
+    height: 0rem; }
+  to {
+    height: 3.15rem; } }
+
+@keyframes slideRight {
+  from {
+    width: 0rem; }
+  to {
+    width: 5.9rem; } }
+
+@keyframes slideLeft {
+  from {
+    width: 0rem; }
+  to {
+    width: 5.55rem; } }
+
+@keyframes scaleOut {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.rocket {
+  position: absolute;
+  top: 20%;
+  width: 40px;
+  left: calc(50% - 30px); }
+  .rocket .rocket-body {
+    left: calc(50% - 50px);
+    z-index: 0%;
+    transform: translate3d(0px, 0px, 0);
+    animation: bounce 0.5s; }
+    .rocket .rocket-body .body {
+      z-index: -100px;
+      background-color: #dadada;
+      height: 90px;
+      left: calc(50% - 50px);
+      border-top-right-radius: 100%;
+      border-top-left-radius: 100%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top: 5px solid #f5f5f5; }
+    .rocket .rocket-body:before {
+      content: '';
+      position: absolute;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 13px;
+      background-color: #554842;
+      bottom: -13px;
+      border-bottom-right-radius: 60%;
+      border-bottom-left-radius: 60%; }
+  .rocket .window {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #a75248;
+    left: calc(49% - 11px);
+    top: 40px;
+    border: 3px solid #b4b2b2; }
+  .rocket .fin {
+    position: absolute;
+    z-index: -100;
+    height: 32px;
+    width: 30px;
+    background-color: #a75248; }
+  .rocket .fin-left {
+    left: -20px;
+    top: calc(100% - 32px);
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 20%; }
+  .rocket .fin-right {
+    right: -20px;
+    top: calc(100% - 32px);
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 20%; }
+  .rocket .exhaust-flame {
+    position: absolute;
+    top: 90%;
+    width: 28px;
+    background: linear-gradient(to bottom, transparent 10%, #f5f5f5 100%);
+    height: 150px;
+    left: calc(50% - 14px);
+    animation: exhaust 0.2s infinite; }
+  .rocket .exhaust-fumes li {
+    width: 60px;
+    height: 60px;
+    background-color: #f5f5f5;
+    list-style: none;
+    position: absolute;
+    border-radius: 100%; }
+    .rocket .exhaust-fumes li:first-child {
+      width: 200px;
+      height: 200px;
+      bottom: -300px;
+      animation: fumes 5s infinite; }
+    .rocket .exhaust-fumes li:nth-child(2) {
+      width: 150px;
+      height: 150px;
+      left: -120px;
+      top: 260px;
+      animation: fumes 3.2s infinite; }
+    .rocket .exhaust-fumes li:nth-child(3) {
+      width: 120px;
+      height: 120px;
+      left: -40px;
+      top: 330px;
+      animation: fumes 3s 1s infinite; }
+    .rocket .exhaust-fumes li:nth-child(4) {
+      width: 100px;
+      height: 100px;
+      left: -170px;
+      animation: fumes 4s 2s infinite;
+      top: 380px; }
+    .rocket .exhaust-fumes li:nth-child(5) {
+      width: 130px;
+      height: 130px;
+      left: -120px;
+      top: 350px;
+      animation: fumes 5s infinite; }
+    .rocket .exhaust-fumes li:nth-child(6) {
+      width: 200px;
+      height: 200px;
+      left: -60px;
+      top: 280px;
+      animation: fumes2 10s infinite; }
+    .rocket .exhaust-fumes li:nth-child(7) {
+      width: 100px;
+      height: 100px;
+      left: -100px;
+      top: 320px; }
+    .rocket .exhaust-fumes li:nth-child(8) {
+      width: 110px;
+      height: 110px;
+      left: 70px;
+      top: 340px; }
+    .rocket .exhaust-fumes li:nth-child(9) {
+      width: 90px;
+      height: 90px;
+      left: 200px;
+      top: 380px;
+      animation: fumes 20s infinite; }
+
+@keyframes fumes {
+  50% {
+    transform: scale(1.5);
+    background-color: transparent; }
+  51% {
+    transform: scale(0.8); }
+  100% {
+    background-color: #f5f5f5;
+    transform: scale(1); } }
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0px, 100%, 0); }
+  100% {
+    transform: translate3d(0px, 0px, 0); } }
+
+@keyframes exhaust {
+  0% {
+    background: linear-gradient(to bottom, transparent 10%, #f5f5f5 100%); }
+  50% {
+    background: linear-gradient(to bottom, transparent 8%, #f5f5f5 100%); }
+  75% {
+    background: linear-gradient(to bottom, transparent 12%, #f5f5f5 100%); } }
+
+@keyframes fumes2 {
+  50% {
+    transform: scale(1.1); } }
