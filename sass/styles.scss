@@ -244,14 +244,16 @@ $darkred: #a75248;
 
 .rocket {
   position: absolute;
-  top: 20%;
+  top: -120px;
   width: 40px;
   left: calc(50% - 30px);
   .rocket-body {
     left: calc(50% - 50px);
     z-index: 0%;
     transform: translate3d(0px, 0px, 0);
-    animation: bounce 0.5s;
+    animation: land 3.5s ease;
+    animation-fill-mode: forwards;
+
     .body {
     z-index: -100px;
     background-color: $lightgrey;
@@ -398,12 +400,12 @@ $darkred: #a75248;
   }
 }
 
-@keyframes bounce {
+@keyframes land {
   0% {
-    transform: translate3d(0px, 100%, 0);
+    transform: translate3d(0px, 0px, 0);
   }
   100% {
-    transform: translate3d(0px, 0px, 0);
+    transform: translate3d(0px, 750px, 0);
   }  
 }
 

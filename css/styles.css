@@ -153,14 +153,15 @@ html {
 
 .rocket {
   position: absolute;
-  top: 20%;
+  top: -120px;
   width: 40px;
   left: calc(50% - 30px); }
   .rocket .rocket-body {
     left: calc(50% - 50px);
     z-index: 0%;
     transform: translate3d(0px, 0px, 0);
-    animation: bounce 0.5s; }
+    animation: land 3.5s ease;
+    animation-fill-mode: forwards; }
     .rocket .rocket-body .body {
       z-index: -100px;
       background-color: #dadada;
@@ -283,11 +284,11 @@ html {
     background-color: #f5f5f5;
     transform: scale(1); } }
 
-@keyframes bounce {
+@keyframes land {
   0% {
-    transform: translate3d(0px, 100%, 0); }
+    transform: translate3d(0px, 0px, 0); }
   100% {
-    transform: translate3d(0px, 0px, 0); } }
+    transform: translate3d(0px, 750px, 0); } }
 
 @keyframes exhaust {
   0% {
