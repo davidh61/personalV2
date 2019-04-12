@@ -152,18 +152,20 @@ html {
     transform: rotate(360deg); } }
 
 .rocket {
-  position: absolute;
+  z-index: 7;
+  position: fixed;
   top: -120px;
   width: 40px;
   left: calc(50% - 30px); }
+  @media screen and (max-width: 1024px) {
+    .rocket {
+      top: -130px; } }
   .rocket .rocket-body {
     left: calc(50% - 50px);
-    z-index: 0%;
     transform: translate3d(0px, 0px, 0);
     animation: land 3.5s ease;
     animation-fill-mode: forwards; }
     .rocket .rocket-body .body {
-      z-index: -100px;
       background-color: #dadada;
       height: 90px;
       left: calc(50% - 50px);
@@ -184,11 +186,12 @@ html {
       border-bottom-left-radius: 60%; }
   .rocket .window {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
-    background-color: #a75248;
-    left: calc(49% - 11px);
+    background: url(../img/spaceman.jfif);
+    background-position: 50% 44%;
+    left: calc(50% - 17px);
     top: 40px;
     border: 3px solid #b4b2b2; }
   .rocket .fin {
@@ -273,6 +276,16 @@ html {
       left: 200px;
       top: 380px;
       animation: fumes 20s infinite; }
+
+.moon {
+  background-color: #A2A8AE;
+  border-radius: 100%;
+  position: fixed;
+  width: 1000px;
+  height: 100px;
+  bottom: -60px;
+  left: calc(50% - 500px);
+  z-index: 5; }
 
 @keyframes fumes {
   50% {

@@ -3,6 +3,13 @@ $pink: #c91ab2;
 $break-small: 400px;
 $break-large: 1024px;
 $font: "Work Sans", sans-serif;
+$white: #f5f5f5;
+$lightgrey: #dadada;
+$midgrey: #b4b2b2;
+$darkgrey: #554842;
+$red: #f01a19;
+$darkred: #a75248;
+$moongrey: #A2A8AE;
 
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 
@@ -235,27 +242,24 @@ html {
 
 // ROCKET!
 
-$white: #f5f5f5;
-$lightgrey: #dadada;
-$midgrey: #b4b2b2;
-$darkgrey: #554842;
-$red: #f01a19;
-$darkred: #a75248;
+
 
 .rocket {
-  position: absolute;
+  z-index: 7;
+  position: fixed;
   top: -120px;
+  @media screen and (max-width: $break-large) {
+    top: -130px;
+  }
   width: 40px;
   left: calc(50% - 30px);
   .rocket-body {
     left: calc(50% - 50px);
-    z-index: 0%;
     transform: translate3d(0px, 0px, 0);
     animation: land 3.5s ease;
     animation-fill-mode: forwards;
 
     .body {
-    z-index: -100px;
     background-color: $lightgrey;
       height: 90px;
       left: calc(50% - 50px);
@@ -279,11 +283,13 @@ $darkred: #a75248;
   }
   .window {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
-    background-color: $darkred;
-    left: calc(49% - 11px);
+    background: url(../img/spaceman.jfif);
+    background-position: 50% 44%;
+    // background-color: $darkred;
+    left: calc(50% - 17px);
     top: 40px;
     border: 3px solid $midgrey;
   }
@@ -322,6 +328,7 @@ $darkred: #a75248;
     list-style: none;
     position: absolute;
     border-radius: 100%;
+
     &:first-child {
       width: 200px;
       height: 200px;
@@ -385,12 +392,23 @@ $darkred: #a75248;
   }
 }
 
+.moon {
+  background-color: $moongrey;
+  border-radius: 100%;
+  position: fixed;
+  width: 1000px;
+  height: 100px;
+  bottom: -60px;
+  left: calc(50% - 500px);
+  z-index: 5;
+}
 
+  
 @keyframes fumes {
   50% {
     transform: scale(1.5);
     background-color: transparent;
-  }
+  }  
   51% {
     transform: scale(0.8);
   }
