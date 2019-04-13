@@ -271,14 +271,15 @@ html {
       animation: fumes 20s infinite; }
 
 .moon {
-  background-color: #a2a8ae;
+  background-color: #f5f2eb;
   border-radius: 100%;
   position: fixed;
   width: 1000px;
   height: 100px;
   bottom: -60px;
   left: calc(50% - 500px);
-  z-index: 5; }
+  z-index: 5;
+  box-shadow: inset 1em 0.5em 4px 0.2em rgba(0, 0, 0, 0.1); }
 
 @keyframes fumes {
   50% {

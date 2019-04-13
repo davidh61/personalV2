@@ -6,7 +6,7 @@ $lightgrey: #dadada;
 $midgrey: #b4b2b2;
 $darkgrey: #554842;
 $darkred: #a75248;
-$moongrey: #a2a8ae;
+$moongrey: #f5f2eb;
 
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 
@@ -385,6 +385,7 @@ html {
   bottom: -60px;
   left: calc(50% - 500px);
   z-index: 5;
+  box-shadow: inset 1em 0.5em 4px 0.2em rgba(0, 0, 0, 0.1)
 }
 
 @keyframes fumes {
