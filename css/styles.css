@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
-* {
-  font-family: "Work Sans", sans-serif; }
-
 html {
   background: url(../img/bg.png) repeat;
   -webkit-background-size: 200px;
   -moz-background-size: 200px;
   -o-background-size: 200px;
-  background-size: 200px; }
+  background-size: 200px;
+  font-family: "Work Sans", sans-serif; }
 
 .container {
   padding: 20px; }
@@ -16,74 +14,69 @@ html {
     width: 40%; }
     @media screen and (max-width: 400px) {
       .container .main {
-        padding-left: 5%;
-        width: 90%; } }
-    @media screen and (max-width: 1024px) {
-      .container .main {
         padding-left: 10%;
         width: 80%; } }
+    @media screen and (max-width: 1024px) {
+      .container .main {
+        padding-left: 5%;
+        width: 90%; } }
     .container .main h1 {
       margin: 0;
       font-family: "Work Sans", sans-serif;
       text-align: center;
       padding: 10px; }
-    .container .main .world {
-      color: black;
-      text-decoration: none; }
-    .container .main .world:hover {
-      color: #0077be;
-      animation: spin 2s linear infinite;
-      -webkit-animation: spin 2s linear infinite;
-      -moz-animation: spin 2s linear infinite; }
     .container .main p {
       padding: 5px;
       font-family: "Work Sans", sans-serif;
       text-align: center; }
+    .container .main .world {
+      color: black;
+      text-decoration: none; }
+      .container .main .world:hover {
+        color: #0077be;
+        animation: spin 2s linear infinite;
+        -webkit-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite; }
     .container .main .text-link {
       color: black; }
-    .container .main .text-link:hover {
-      text-decoration: none; }
+      .container .main .text-link:hover {
+        text-decoration: none; }
     .container .main .border {
       background-color: black; }
-    .container .main .border-top {
-      height: 2px;
-      animation: scaleOut 1s;
-      -webkit-animation: scaleOut 1s;
-      -moz-animation: scaleOut 1s; }
-    .container .main .bottom-border {
-      height: 2px;
-      animation-delay: 2s; }
-    .container .main .bottom-left-border {
-      float: left;
-      animation: slideRight 1s;
-      -webkit-animation: slideRight 1s;
-      -moz-animation: slideRight 1s;
-      animation-delay: 2s;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards; }
-    .container .main .bottom-border-right {
-      float: right;
-      animation: slideLeft 1s;
-      -webkit-animation: slideLeft 1s;
-      -moz-animation: slideLeft 1s;
-      animation-timing-function: linear;
-      animation-delay: 2s;
-      animation-fill-mode: forwards; }
-    .container .main .border-left {
-      float: left; }
-    .container .main .border-right {
-      float: right; }
-    .container .main .border-side {
-      width: 2px;
-      -webkit-animation-name: slideDown;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      animation-timing-function: linear;
-      -webkit-animation-timing-function: linear;
-      animation-delay: 1s;
-      -webkit-animation-delay: 1s;
-      display: inline-block;
-      animation-fill-mode: forwards; }
+      .container .main .border.border-top {
+        height: 2px;
+        animation: scaleOut 1s;
+        -webkit-animation: scaleOut 1s;
+        -moz-animation: scaleOut 1s; }
+      .container .main .border.bottom-border {
+        height: 2px;
+        animation-delay: 2s; }
+      .container .main .border.bottom-left-border {
+        float: left;
+        animation: slideRight 1s;
+        -webkit-animation: slideRight 1s;
+        -moz-animation: slideRight 1s;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards; }
+      .container .main .border.bottom-border-right {
+        float: right;
+        animation: slideLeft 1s;
+        -webkit-animation: slideLeft 1s;
+        -moz-animation: slideLeft 1s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-fill-mode: forwards; }
+      .container .main .border.border-left {
+        float: left; }
+      .container .main .border.border-right {
+        float: right; }
+      .container .main .border.border-side {
+        width: 2px;
+        animation: slideDown 1s 1s linear forwards;
+        -webkit-animation: slideDown 1s 1s linear;
+        animation-fill-mode: forwards;
+        display: inline-block; }
     .container .main .portfolio-header-wrapper {
       display: inline-block;
       background-color: white;
@@ -96,7 +89,7 @@ html {
       border: 2px solid black;
       padding: 10px;
       background-color: white; }
-    .container .main .footer {
+    .container .main footer {
       text-align: center; }
     .container .main .connect {
       display: inline-block;
@@ -109,18 +102,18 @@ html {
     .container .main .connect > a {
       color: black;
       text-decoration: none; }
-    .container .main .connect > a:hover:first-child {
-      color: #E1306C; }
-    .container .main .connect > a:hover:nth-child(2) {
-      color: #0077b5; }
-    .container .main .connect > a:hover:nth-child(3) {
-      color: #333; }
-    .container .main .connect > a:hover:nth-child(4) {
-      color: #f48024; }
-    .container .main .connect > a:hover:nth-child(5) {
-      color: #0072c6; }
-    .container .main .connect > a:hover {
-      text-decoration: none; }
+      .container .main .connect > a:hover:first-child {
+        color: #e1306c; }
+      .container .main .connect > a:hover:nth-child(2) {
+        color: #0077b5; }
+      .container .main .connect > a:hover:nth-child(3) {
+        color: #333; }
+      .container .main .connect > a:hover:nth-child(4) {
+        color: #f48024; }
+      .container .main .connect > a:hover:nth-child(5) {
+        color: #0072c6; }
+      .container .main .connect > a:hover {
+        text-decoration: none; }
 
 @keyframes slideDown {
   from {
@@ -148,15 +141,15 @@ html {
 
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
 
 .rocket {
   z-index: 7;
   position: fixed;
   top: -120px;
   width: 40px;
-  left: calc(50% - 30px); }
+  left: calc(50% - 20px); }
   @media screen and (max-width: 1024px) {
     .rocket {
       top: -130px; } }
@@ -175,7 +168,7 @@ html {
       border-bottom-right-radius: 50%;
       border-top: 5px solid #f5f5f5; }
     .rocket .rocket-body:before {
-      content: '';
+      content: "";
       position: absolute;
       left: calc(50% - 20px);
       width: 40px;
@@ -191,7 +184,7 @@ html {
     border-radius: 100%;
     background: url(../img/spaceman.jfif);
     background-position: 50% 44%;
-    left: calc(50% - 17px);
+    left: calc(50% - 18px);
     top: 40px;
     border: 3px solid #b4b2b2; }
   .rocket .fin {
@@ -278,7 +271,7 @@ html {
       animation: fumes 20s infinite; }
 
 .moon {
-  background-color: #A2A8AE;
+  background-color: #a2a8ae;
   border-radius: 100%;
   position: fixed;
   width: 1000px;
