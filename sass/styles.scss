@@ -420,10 +420,10 @@ html {
 
 @keyframes land {
   0% {
-    transform: translate3d(0px, 0px, 0);
+    transform: translateY(0);
   }
   100% {
-    transform: translate3d(0px, 750px, 0);
+    transform: translateY(100vh);
   }  
 }
 
