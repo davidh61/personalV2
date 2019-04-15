@@ -6,7 +6,7 @@ $lightgrey: #dadada;
 $midgrey: #b4b2b2;
 $darkgrey: #554842;
 $darkred: #a75248;
-$moongrey: #f5f2eb;
+$moongrey: #f5f3ce;
 
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 
@@ -67,62 +67,11 @@ html {
       }
     }
 
-    .border {
-      background-color: black;
-
-      &.border-top {
-        height: 2px;
-        animation: scaleOut 1s;
-        -webkit-animation: scaleOut 1s;
-        -moz-animation: scaleOut 1s;
-      }
-
-      &.bottom-border {
-        height: 2px;
-        animation-delay: 2s;
-      }
-
-      &.bottom-left-border {
-        float: left;
-        animation: slideRight 1s;
-        -webkit-animation: slideRight 1s;
-        -moz-animation: slideRight 1s;
-        animation-delay: 2s;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
-      }
-
-      &.bottom-border-right {
-        float: right;
-        animation: slideLeft 1s;
-        -webkit-animation: slideLeft 1s;
-        -moz-animation: slideLeft 1s;
-        animation-timing-function: linear;
-        animation-delay: 2s;
-        animation-fill-mode: forwards;
-      }
-
-      &.border-left {
-        float: left;
-      }
-
-      &.border-right {
-        float: right;
-      }
-
-      &.border-side {
-        width: 2px;
-        animation: slideDown 1s 1s linear forwards;
-        -webkit-animation: slideDown 1s 1s linear;
-        animation-fill-mode: forwards;
-        display: inline-block;
-      }
-    }
-
     .portfolio-header-wrapper {
       display: inline-block;
-      background-color: white;
+      background-color: #eee;
       transition: height 0.5s;
+      border-radius: 20px;
     }
 
     .portfolio-header {
@@ -134,7 +83,8 @@ html {
       padding: 10px;
       border: 2px solid black;
       padding: 10px;
-      background-color: white;
+      background-color: #eee;
+      border-radius: 20px;
     }
 
     footer {
@@ -143,10 +93,11 @@ html {
 
     .connect {
       display: inline-block;
+      border-radius: 20px;
       font-size: 30px;
       text-align: center;
       border: 2px solid black;
-      background-color: white;
+      background-color: #eee;
       margin: 20px;
       padding: 5px 10px 5px 10px;
     }
@@ -182,48 +133,8 @@ html {
   }
 }
 
-@keyframes slideDown {
-  from {
-    height: 0rem;
-  }
-  to {
-    height: 3.15rem;
-  }
-}
 
-@keyframes slideRight {
-  from {
-    width: 0rem;
-  }
-  to {
-    width: 5.9rem;
-  }
-}
 
-@keyframes slideLeft {
-  from {
-    width: 0rem;
-  }
-  to {
-    width: 5.55rem;
-  }
-}
-
-@keyframes scaleOut {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-  }
-}
 
 // ROCKET!
 
@@ -249,7 +160,7 @@ html {
     animation-fill-mode: forwards;
 
     &.fly {
-      animation: fly 1.5s linear;
+      animation: fly 1.5s ease-in-out;
       animation-fill-mode: forwards;
     }
 
@@ -399,6 +310,13 @@ html {
   left: calc(50% - 500px);
   z-index: 5;
   box-shadow: inset 1em 0.5em 4px 0.2em rgba(0, 0, 0, 0.1);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes fumes {
