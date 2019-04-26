@@ -15,7 +15,7 @@ html {
   -webkit-background-size: 200px;
   -moz-background-size: 200px;
   -o-background-size: 200px;
-  background-size: 200px;  
+  background-size: 200px;
   font-family: $font;
 }
 
@@ -133,9 +133,6 @@ html {
   }
 }
 
-
-
-
 // ROCKET!
 
 .rocket {
@@ -149,15 +146,15 @@ html {
     top: -130px;
   }
 
-  &:hover {
-    cursor: pointer;
-  }
-
   .rocket-body {
     left: calc(50% - 50px);
     transform: translate3d(0px, 0px, 0);
     animation: land 3.5s ease;
     animation-fill-mode: forwards;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &.fly {
       animation: fly 1.5s ease-in-out;
@@ -168,13 +165,11 @@ html {
       background-color: $lightgrey;
       height: 90px;
       left: calc(50% - 50px);
-      border-top-right-radius: 100%;  
+      border-top-right-radius: 100%;
       border-top-left-radius: 100%;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
       border-top: 5px solid $white;
-      
-
     }
     &:before {
       content: "";
@@ -227,10 +222,17 @@ html {
     left: calc(50% - 14px);
     animation: exhaust 0.2s infinite;
   }
+  .fumes li {
+    list-style: none;
+  }
+  .exhaust-fumes {
+    animation: hide 3s;
+    animation-fill-mode: forwards;
+  }
   .exhaust-fumes li {
     width: 60px;
     height: 60px;
-    background-color: $white;
+    background-color: $midgrey;
     list-style: none;
     position: absolute;
     border-radius: 100%;
@@ -238,64 +240,46 @@ html {
     &:first-child {
       width: 200px;
       height: 200px;
-      bottom: 110vh;
-      animation: fumes 5s 2s;
+      top: 110vh;
+      animation: fumes 1.3s ease-in;
     }
     &:nth-child(2) {
       width: 150px;
       height: 150px;
       left: -120px;
       top: 100vh;
-      animation: fumes 3.2s 3s;
+      animation: fumes 1s ease-in;
+      background-color: $lightgrey;
     }
     &:nth-child(3) {
       width: 120px;
       height: 120px;
       left: -40px;
       top: 90vh;
-      animation: fumes 3s 1s 2s;
+      animation: fumes 2s ease-in;
     }
     &:nth-child(4) {
       width: 100px;
       height: 100px;
       left: -170px;
       top: 100vh;
-      animation: fumes 4s 2s 3s;
+      animation: fumes 2.3s ease-in;
+      background-color: $lightgrey;
     }
     &:nth-child(5) {
       width: 130px;
       height: 130px;
       left: -120px;
       top: 130vh;
-      animation: fumes 5s 3s;
+      animation: fumes 1.5s ease-in;
     }
     &:nth-child(6) {
       width: 200px;
       height: 200px;
       left: -60px;
-      top: 80vh;
-      animation: fumes2 10s 4s;
-    }
-    &:nth-child(7) {
-      width: 100px;
-      height: 100px;
-      left: -100px;
-      top: 80vh;
-      animation: fumes 20s 3s;
-    }
-    &:nth-child(8) {
-      width: 110px;
-      height: 110px;
-      left: 70px;
-      top: 120vh;
-      animation: fumes 20s 4s;
-    }
-    &:nth-child(9) {
-      width: 90px;
-      height: 90px;
-      left: 200px;
-      top: 100vh;
-      animation: fumes 20s 5s;
+      top: 95vh;
+      animation: fumes2 2.5s ease-in;
+      background-color: $lightgrey;
     }
   }
 }
@@ -333,6 +317,24 @@ html {
   }
 }
 
+@keyframes fumes2 {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes land {
   0% {
     transform: translateY(0);
@@ -360,11 +362,5 @@ html {
   }
   75% {
     background: linear-gradient(to bottom, transparent 12%, $white 100%);
-  }
-}
-
-@keyframes fumes2 {
-  50% {
-    transform: scale(1.1);
   }
 }
