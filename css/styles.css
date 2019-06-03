@@ -46,6 +46,21 @@ html {
       background-color: #eee;
       transition: height 0.5s;
       border-radius: 20px; }
+    .container .main .menu-items {
+      display: flex;
+      padding-bottom: 20px; }
+      .container .main .menu-items .menu-item {
+        text-align: center;
+        width: 33%;
+        text-decoration: none;
+        color: black; }
+        .container .main .menu-items .menu-item span :hover {
+          background-color: #b4b2b2; }
+    .container .main .white-bg {
+      border-radius: 20px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid black; }
     .container .main .portfolio-header {
       text-align: center;
       padding: 20px; }

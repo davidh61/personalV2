@@ -74,6 +74,30 @@ html {
       border-radius: 20px;
     }
 
+    .menu-items {
+      display: flex;
+      padding-bottom: 20px;
+  
+      .menu-item {
+        text-align: center;
+        width: 33%;
+        text-decoration: none;
+        color: black;
+
+        span { 
+          &:hover {
+          background-color: $midgrey;
+        }
+      }
+    }
+
+    .white-bg {
+      border-radius: 20px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid black;
+    }
+
     .portfolio-header {
       text-align: center;
       padding: 20px;
