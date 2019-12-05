@@ -3,16 +3,41 @@
 
 <head>
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles-rachael.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <div class="dog">
+    <div class="container">
+        
+        <h1>Hello Rachael</h1>
 
-        <div class="paw"></div>
-        <div class="paw"></div>
+        <p>For Christmas this year..</p>
 
+        <p>I didn't you get you a dog 😢</p>
+
+        <div class="dog">
+
+            <div class="paw"></div>
+            <div class="paw"></div>
+
+        </div>
     </div>
-
 </body>
+
+</html>
+<script>
+    $(document).ready(function () {
+
+        'use strict';
+
+        $("h1").delay(500).slideDown(500);
+
+        $("p:eq(0)").delay(1250).slideDown(500);
+
+        $("p:eq(1)").delay(2000).slideDown(500);
+
+        $("p:eq(1)").delay(1500).slideDown(500);
+
+    });
+</script>
