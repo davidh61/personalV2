@@ -4,7 +4,7 @@ $font: "Bebas Neue", cursive;
 
 html {
   font-family: $font;
-  color: #c8c8c8;
+  color: black;
 }
 
 .container {
@@ -18,22 +18,22 @@ html {
   p {
     font-size: 75px;
     display: none;
+  }
 
-    .dog {
-      .paw {
-        background-color: #8d4f3a;
-        width: 100px;
-        height: 150px;
-        border-radius: 50px 50px 0px 0px;
-        position: absolute;
-        bottom: -125px;
+  .dog {
+    .paw {
+      background-color: #8d4f3a;
+      width: 100px;
+      height: 150px;
+      border-radius: 50px 50px 0px 0px;
+      position: absolute;
+      bottom: -125px;
 
-        &:nth-child(1) {
-          left: 25%;
-        }
-        &:nth-child(2) {
-          right: 25%;
-        }
+      &:nth-child(1) {
+        left: 25%;
+      }
+      &:nth-child(2) {
+        right: 25%;
       }
     }
   }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 html {
   font-family: "Bebas Neue", cursive;
-  color: #c8c8c8; }
+  color: black; }
 
 .container {
   padding: 20px; }
@@ -11,14 +11,14 @@ html {
   .container p {
     font-size: 75px;
     display: none; }
-    .container p .dog .paw {
-      background-color: #8d4f3a;
-      width: 100px;
-      height: 150px;
-      border-radius: 50px 50px 0px 0px;
-      position: absolute;
-      bottom: -125px; }
-      .container p .dog .paw:nth-child(1) {
-        left: 25%; }
-      .container p .dog .paw:nth-child(2) {
-        right: 25%; }
+  .container .dog .paw {
+    background-color: #8d4f3a;
+    width: 100px;
+    height: 150px;
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    bottom: -125px; }
+    .container .dog .paw:nth-child(1) {
+      left: 25%; }
+    .container .dog .paw:nth-child(2) {
+      right: 25%; }
