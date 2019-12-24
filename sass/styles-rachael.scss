@@ -1,0 +1,52 @@
+$font: "Bebas Neue", cursive;
+
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+
+body, html {
+  height: 100vh; 
+  overflow: hidden;
+  font-family: $font;
+  background-color: #e2a9a9;
+  color: black;
+}
+
+.container {  
+  padding: 25px;
+
+  h1 {
+    text-align: center;
+    font-size: 100px;
+    display: none;
+  }
+
+  p {
+    font-size: 75px;
+    display: none;
+  }
+  .doggo {
+    text-align: center;
+    vertical-align: 50%;
+    .dogSVG {
+      display: none;
+    }
+  }
+
+  .dog {
+    display: none;
+    .paw {
+      background-color: #8d4f3a;
+      width: 100px;
+      height: 150px;
+      border-radius: 50px 50px 0px 0px;
+      position: absolute;
+      bottom: -125px;
+
+      &:nth-child(1) {
+        left: 25%;
+      }
+      &:nth-child(2) {
+        right: 25%;
+      }
+    }
+  }
+}
